@@ -39,7 +39,7 @@ jobs:
       run: docker images
 
     - name: Check Docker container
-      run: docker run python-ci-cd:v1
+      run: docker run -d -p 5000:6000 python-ci-cd:v1
 
     - name: Check Docker container name
       run: docker ps
