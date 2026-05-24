@@ -38,3 +38,7 @@ jobs:
     - name: Check Docker Images
       run: docker images
 
+    - name: Check Docker container
+      run: docker run python-ci-cd:v1
+
+
