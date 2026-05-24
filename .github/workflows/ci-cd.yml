@@ -41,4 +41,7 @@ jobs:
     - name: Check Docker container
       run: docker run python-ci-cd:v1
 
+    - name: Check Docker container name
+      run: docker ps
+
 
